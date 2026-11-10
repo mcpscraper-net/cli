@@ -68,7 +68,8 @@ Requests and your key only ever go to the base URL, never to a server named in t
 ## Links
 
 - [mcpscraper.net](https://mcpscraper.net)
-- [Docs](https://mcpscraper.net/docs)
+- [CLI docs](https://mcpscraper.net/docs/cli)
+- [API docs](https://mcpscraper.net/docs)
 - [API spec](https://livewebdata.com/openapi.json)
 
 ## License
