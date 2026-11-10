@@ -1,0 +1,14 @@
+{
+  "name": "MCPScraper",
+  "tagline": "Scraping MCP servers, compared on a published rubric.",
+  "domain": "mcpscraper.net",
+  "bin": "mcpscraper",
+  "npm": "mcpscraper",
+  "org": "mcpscraper-net",
+  "repo": "cli",
+  "siteUrl": "https://mcpscraper.net",
+  "docsUrl": "https://mcpscraper.net/docs",
+  "apiName": "Live Web Data API",
+  "apiBaseUrl": "https://livewebdata.com/api",
+  "specUrl": "https://livewebdata.com/openapi.json"
+}
