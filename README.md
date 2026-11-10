@@ -8,8 +8,8 @@ It is the command line client for the [Live Web Data API](https://mcpscraper.net
 ## Quick start
 
 ```bash
-npx mcpscraper login                                   # paste your API key (not echoed)
-npx mcpscraper fetch https://example.com -o text       # the page as Markdown
+npx @mcpscraper-net/cli login                                   # paste your API key (not echoed)
+npx @mcpscraper-net/cli fetch https://example.com -o text       # the page as Markdown
 ```
 
 Get a key at [mcpscraper.net](https://mcpscraper.net). Node.js 18 or later.
@@ -17,7 +17,7 @@ Get a key at [mcpscraper.net](https://mcpscraper.net). Node.js 18 or later.
 ## Install
 
 ```bash
-npm install -g mcpscraper
+npm install -g @mcpscraper-net/cli
 mcpscraper --help
 ```
 
