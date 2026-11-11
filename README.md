@@ -3,7 +3,7 @@
 Scraping MCP servers, compared on a published rubric.
 
 `mcpscraper` fetches live web pages as clean Markdown, text or HTML, straight from your terminal or your agent's shell.
-It is the command line client for the [Live Web Data API](https://livewebdata.com).
+It is the command line client for the [MCPScraper API](https://mcpscraper.net).
 
 ## Quick start
 
@@ -39,7 +39,7 @@ A fetch that is still running after about 100 seconds is collected automatically
 ## The commands follow the live API
 
 `mcpscraper` builds its commands and options from the API's OpenAPI document at
-[https://livewebdata.com/openapi.json](https://livewebdata.com/openapi.json), cached for an hour. When the API gains a field or an endpoint, the
+[https://mcpscraper.net/openapi.json](https://mcpscraper.net/openapi.json), cached for an hour. When the API gains a field or an endpoint, the
 option or command is there on your next run, without updating the CLI. Offline, it uses the last cached
 copy, then the copy bundled with the installed version (`mcpscraper spec` shows which one; `--offline` skips the
 download). An hourly job here publishes a new version whenever the API spec changed.
@@ -48,9 +48,9 @@ download). An hourly job here publishes a new version whenever the API spec chan
 
 | Setting | Option | Environment | Default |
 |---|---|---|---|
-| API key | `--api-key` | `LIVE_WEB_DATA_API_KEY` | the key saved by `mcpscraper login` (`~/.config/mcpscraper/config.json`, mode 0600) |
-| API base URL | `--base-url` | `LIVE_WEB_DATA_API_BASE_URL` | `https://livewebdata.com/api` |
-| API spec URL | `--spec-url` | `LIVE_WEB_DATA_SPEC_URL` | `https://livewebdata.com/openapi.json` |
+| API key | `--api-key` | `MCPSCRAPER_API_KEY` | the key saved by `mcpscraper login` (`~/.config/mcpscraper/config.json`, mode 0600) |
+| API base URL | `--base-url` | `MCPSCRAPER_API_BASE_URL` | `https://mcpscraper.net/api` |
+| API spec URL | `--spec-url` | `MCPSCRAPER_SPEC_URL` | `https://mcpscraper.net/openapi.json` |
 | Output | `-o json\|text\|<field>` | | `json` |
 | Update notice | | `MCPSCRAPER_NO_UPDATE_NOTIFIER=1` turns it off | once a day, terminals only |
 
@@ -70,7 +70,7 @@ Requests and your key only ever go to the base URL, never to a server named in t
 - [mcpscraper.net](https://mcpscraper.net)
 - [CLI docs](https://mcpscraper.net/docs/cli)
 - [API docs](https://mcpscraper.net/docs)
-- [API spec](https://livewebdata.com/openapi.json)
+- [API spec](https://mcpscraper.net/openapi.json)
 
 ## License
 
