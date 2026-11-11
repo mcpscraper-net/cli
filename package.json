@@ -22,7 +22,7 @@
     "url": "git+https://github.com/mcpscraper-net/cli.git"
   },
   "license": "MIT",
-  "author": "Teneo Labs Inc.",
+  "author": "mcpscraper.net",
   "type": "module",
   "bin": {
     "mcpscraper": "bin/cli.js"
