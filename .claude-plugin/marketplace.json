@@ -1,0 +1,17 @@
+{
+  "name": "mcpscraper",
+  "owner": {
+    "name": "MCPScraper",
+    "url": "https://mcpscraper.net"
+  },
+  "metadata": {
+    "description": "The MCPScraper plugin: MCPScraper API MCP server and skill."
+  },
+  "plugins": [
+    {
+      "name": "mcpscraper",
+      "source": "./",
+      "description": "Fetch public web pages live as clean Markdown, text or HTML through the MCPScraper API: its remote MCP server and the mcpscraper CLI."
+    }
+  ]
+}

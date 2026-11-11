@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "mcpscraper": {
+      "type": "http",
+      "url": "https://mcpscraper.net/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCPSCRAPER_API_KEY}"
+      }
+    }
+  }
+}

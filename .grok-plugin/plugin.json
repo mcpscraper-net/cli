@@ -1,0 +1,19 @@
+{
+  "name": "mcpscraper",
+  "version": "0.1.0",
+  "description": "Fetch public web pages live as clean Markdown, text or HTML through the MCPScraper API: its remote MCP server and the mcpscraper CLI.",
+  "author": {
+    "name": "MCPScraper",
+    "url": "https://mcpscraper.net"
+  },
+  "homepage": "https://mcpscraper.net",
+  "repository": "https://github.com/mcpscraper-net/cli",
+  "license": "MIT",
+  "keywords": [
+    "mcpscraper",
+    "web-fetch",
+    "markdown",
+    "mcp",
+    "cli"
+  ]
+}

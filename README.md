@@ -36,6 +36,35 @@ mcpscraper fetch --help                                           # every option
 A fetch that is still running after about 100 seconds is collected automatically with the same
 `Idempotency-Key`, so it is charged once.
 
+## MCP server
+
+The MCPScraper API is also a remote MCP server (Streamable HTTP) at `https://mcpscraper.net/mcp`, with the tools
+`get_page_contents` and `get_account_status`. It takes the same API key as a bearer token.
+
+```bash
+claude mcp add --transport http mcpscraper https://mcpscraper.net/mcp \
+  --header "Authorization: Bearer $MCPSCRAPER_API_KEY"
+```
+
+Any other client: URL `https://mcpscraper.net/mcp`, header `Authorization: Bearer <key>`. Config for Cursor, VS Code and
+Claude Desktop: [MCP docs](https://mcpscraper.net/docs/mcp). The server's entry for the MCP Registry is [server.json](server.json)
+(`net.mcpscraper/mcpscraper`).
+
+## Agent plugin and skill
+
+This repo is also a plugin for Claude Code, Grok Build and Gemini CLI, and holds an agent skill. Each one connects the
+MCP server above and teaches the agent when to fetch a page with it or with `mcpscraper`.
+
+```bash
+npx skills add mcpscraper-net/cli                                    # the skill, for any agent that reads SKILL.md
+claude plugin marketplace add mcpscraper-net/cli && claude plugin install mcpscraper@mcpscraper
+gemini extensions install https://github.com/mcpscraper-net/cli
+```
+
+Network and credentials: the plugin calls `https://mcpscraper.net/mcp` only, and the CLI `https://mcpscraper.net/api` and
+`https://mcpscraper.net/openapi.json`. Both need one credential, your MCPScraper API key, read from `MCPSCRAPER_API_KEY`. No hooks, no
+scripts run on install.
+
 ## The commands follow the live API
 
 `mcpscraper` builds its commands and options from the API's OpenAPI document at
