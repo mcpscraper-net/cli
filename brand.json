@@ -1,6 +1,5 @@
 {
   "name": "MCPScraper",
-  "tagline": "Scraping MCP servers, compared on a published rubric.",
   "domain": "mcpscraper.net",
   "bin": "mcpscraper",
   "npm": "@mcpscraper-net/cli",

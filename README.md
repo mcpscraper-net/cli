@@ -1,7 +1,5 @@
 # MCPScraper CLI
 
-Scraping MCP servers, compared on a published rubric.
-
 `mcpscraper` fetches live web pages as clean Markdown, text or HTML, straight from your terminal or your agent's shell.
 It is the command line client for the [MCPScraper API](https://mcpscraper.net).
 
