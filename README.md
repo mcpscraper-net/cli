@@ -61,9 +61,10 @@ claude plugin marketplace add mcpscraper-net/cli && claude plugin install mcpscr
 gemini extensions install https://github.com/mcpscraper-net/cli
 ```
 
-Network and credentials: the plugin calls `https://mcpscraper.net/mcp` only, and the CLI `https://mcpscraper.net/api` and
-`https://mcpscraper.net/openapi.json`. Both need one credential, your MCPScraper API key, read from `MCPSCRAPER_API_KEY`. No hooks, no
-scripts run on install.
+Network and credentials: the plugin calls `https://mcpscraper.net/mcp` only. The CLI calls `https://mcpscraper.net/api` and
+`https://mcpscraper.net/openapi.json`, and `https://registry.npmjs.org` (`npx` and a once-a-day update check, off with
+`MCPSCRAPER_NO_UPDATE_NOTIFIER=1`). Both need one credential, your MCPScraper API key,
+read from `MCPSCRAPER_API_KEY` or saved by `mcpscraper login`. No hooks, no scripts run on install.
 
 ## The commands follow the live API
 
