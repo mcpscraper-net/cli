@@ -1,6 +1,6 @@
 {
   "name": "@mcpscraper-net/cli",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "MCPScraper CLI: live web pages as clean Markdown, text or HTML in your terminal, through the MCPScraper API. The commands follow the live API spec.",
   "keywords": [
     "cli",
